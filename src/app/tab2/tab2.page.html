@@ -1,10 +1,11 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      People
     </ion-title>
   </ion-toolbar>
 </ion-header>
+
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
@@ -13,5 +14,123 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-searchbar></ion-searchbar>
+
+  <ion-segment>
+    <ion-segment-button value="location" content-id="location">
+      <ion-label>Location</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="favour" content-id="favour">
+      <ion-label>Favour</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <ion-segment-view>
+    <ion-segment-content id="location">
+      <ion-item>
+        <ion-label>Cabinet members</ion-label>
+      </ion-item>
+    
+      <!--Cabinets-->
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+              <ion-card-header>
+                <ion-card-title>Corrupt Politician</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card>
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+              <ion-card-header>
+                <ion-card-title>Kray Zee Mann</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card>
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+              <ion-card-header>
+                <ion-card-title>The one nobody remembers</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    
+      <!-- My Locals page-->
+      <ion-item>
+        <ion-label>My Locals </ion-label>
+      </ion-item>
+    
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+              <ion-card-header>
+                <ion-card-title>Charitable Satanist</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card>
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+              <ion-card-header>
+                <ion-card-title>Environmental Activist</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card>
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+              <ion-card-header>
+                <ion-card-title>Nepo Baby</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    
+      <!-- Internationals page-->
+    
+      <ion-item>
+        <ion-label>International </ion-label>
+      </ion-item>
+      
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+              <ion-card-header>
+                <ion-card-title>Elmo Husk</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card>
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+              <ion-card-header>
+                <ion-card-title>Person who actually does their job</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card>
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+              <ion-card-header>
+                <ion-card-title>Luke Atmey</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-segment-content>
+    <ion-segment-content id="favour">Lorem Ipsum</ion-segment-content>
+  </ion-segment-view>
+
+  
 </ion-content>
