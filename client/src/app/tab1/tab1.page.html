@@ -13,5 +13,56 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Latest page"></app-explore-container>
+  <ion-card>
+    <ion-grid>
+      <ion-row class="card-row">
+        <!-- Left: Image -->
+        <ion-col size="10">
+          <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+        </ion-col>
+  
+        <!-- Right: Radio Buttons (Aligned Right) -->
+        <ion-col size="2" class="radio-group-container">
+          <ion-radio-group value="Follow">
+            <ion-radio value="Support">Support</ion-radio><br />
+            <ion-radio value="Follow">Follow</ion-radio><br />
+            <ion-radio value="Dislike">Dislike</ion-radio><br />
+          </ion-radio-group>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <ion-card-header>
+      <ion-card-title>Politician Name</ion-card-title>
+      <ion-card-subtitle>Affiliation and party</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Biography and short summary
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-grid>
+      <ion-col></ion-col>
+    </ion-grid>
+    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+    <ion-card-header>
+      <ion-card-title>Event name</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+    Event description
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Event title</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Event description
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
