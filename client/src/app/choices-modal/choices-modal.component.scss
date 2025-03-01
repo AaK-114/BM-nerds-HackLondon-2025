@@ -1,0 +1,17 @@
+ion-fab {
+  // Reduce padding for the container itself
+  --padding-bottom: 4px;
+  --padding-end: 2px;
+  --padding-start: 4px;
+  --padding-top: 2px;
+
+  /* Optionally adjust size for the button */
+  ion-fab-button {
+    //width: auto;
+    //height: auto;
+    --padding-end: 2px;
+    --padding-top: 2px;
+    padding: 6px; // Control padding inside fab-button
+    //font-size: 14px; // Optional: Adjust font size if needed to shrink visuals
+  }
+}
