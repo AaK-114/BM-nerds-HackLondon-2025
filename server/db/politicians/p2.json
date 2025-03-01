@@ -1,0 +1,44 @@
+{
+  "profile": {
+    "username": "politician2",
+    "password": "politician2",
+    "photo": "PROFILE PHOTO 2"
+  },
+  "userID": "p2",
+  "logs": [
+    {
+      "logID": "l21",
+      "logText": "Example log text 1 for user 2.",
+      "logDate": "2025-03-24",
+      "logTime": "11:21",
+      "logImages": [
+        {
+          "ImageID": "i211",
+          "ImageData": "MEDIA IMAGE 211 DATA"
+        },
+        {
+          "ImageID": "i212",
+          "ImageData": "MEDIA IMAGE 212 DATA"
+        }
+      ],
+      "topicIDs": ["t3", "t5", "t5"]
+    },
+    {
+      "logID": "l22",
+      "logText": "Example log text 2 for user 2.",
+      "logDate": "2025-03-16",
+      "logTime": "13:43",
+      "logImages": [
+        {
+          "ImageID": "i221",
+          "ImageData": "MEDIA IMAGE 221 DATA"
+        },
+        {
+          "ImageID": "i222",
+          "ImageData": "MEDIA IMAGE 222 DATA"
+        }
+      ],
+      "topicIDs": ["t4", "t4", "t4"]
+    }
+  ]
+}

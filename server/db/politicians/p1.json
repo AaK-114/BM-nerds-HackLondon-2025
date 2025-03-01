@@ -1,0 +1,54 @@
+{
+  "profile": {
+    "username": "politician1",
+    "password": "politician1",
+    "photo": "PROFILE PHOTO 1",
+    "preferences": {}
+  },
+  "politicianID": "p1",
+  "logs": [
+    {
+      "logID": "l1",
+      "logText": "This is example 1 media text.",
+      "logDate": "",
+      "logTime": "",
+      "logImages": [
+        {
+          "ImageID": "i1",
+          "ImageData": "MEDIA IMAGE 1 DATA HERE"
+        },
+        {
+          "ImageID": "i2",
+          "ImageData": "MEDIA IMAGE 2 DATA HERE"
+        }
+      ],
+      "topicIDs": [
+        "t1",
+        "t2",
+        "t3"
+      ]
+    },
+    {
+      "logID": "l2",
+      "logText": "This is example 2 media text.",
+      "logDate": "",
+      "logTime": "",
+      "logImages": [
+        {
+          "ImageID": "i3",
+          "ImageData": "MEDIA IMAGE 1 DATA HERE"
+        },
+        {
+          "ImageID": "i4",
+          "ImageData": "MEDIA IMAGE 2 DATA HERE"
+        }
+      ],
+      "topicIDs": [
+        "t1",
+        "t2",
+        "t3"
+      ]
+    }
+  ]
+
+}

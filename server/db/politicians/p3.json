@@ -1,0 +1,27 @@
+{
+  "profile": {
+    "username": "politician3",
+    "password": "politician3",
+    "photo": "PROFILE PHOTO 3"
+  },
+  "userID": "p3",
+  "logs": [
+    {
+      "logID": "l31",
+      "logText": "Example log text 1 for user 3.",
+      "logDate": "2025-03-07",
+      "logTime": "18:42",
+      "logImages": [
+        {
+          "ImageID": "i311",
+          "ImageData": "MEDIA IMAGE 311 DATA"
+        },
+        {
+          "ImageID": "i312",
+          "ImageData": "MEDIA IMAGE 312 DATA"
+        }
+      ],
+      "topicIDs": ["t1", "t5", "t2"]
+    }
+  ]
+}
