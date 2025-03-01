@@ -7,4 +7,19 @@ ion-card
 ion-col
 {
     text-align: center;
+    width: 160px;
+    justify-content: flex-start;
+}
+
+.profile-row
+{
+    justify-content: flex-start;
+}
+
+.profile-card
+{
+    width:160px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
 }
