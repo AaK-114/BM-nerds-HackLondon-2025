@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>My Profile: {{activeUser === 'empty' ? '' : activeUser}}</ion-title>
+    <ion-icon id="modal-dismiss" slot="end" name="close" (click)="modalDismiss()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <ion-grid>
+    <ion-row>
+      <ion-col> -->
+
+  <ion-button (click)="logIn()" class="login-btn" *ngIf="!loggedIn">
+    <ion-icon name="person-sharp"></ion-icon>
+    <ion-text>Log In</ion-text>
+  </ion-button>
+  <ion-button (click)="logOut()" class="login-btn" *ngIf="loggedIn" color="danger">
+    <ion-icon name="person-sharp"></ion-icon>
+    <ion-text>Log Out</ion-text>
+  </ion-button>
+  <!-- </ion-col>
+  </ion-row>
+  <ion-row>
+
+  </ion-row>
+</ion-grid> -->
+
+<!--  <ion-button (click)="save()" class="login-btn" *ngIf="loggedIn" color="success">-->
+<!--    &lt;!&ndash; <ion-icon name="person-sharp"></ion-icon> &ndash;&gt;-->
+<!--    <ion-text>Save Changes</ion-text>-->
+<!--  </ion-button>-->
+
+  <div *ngIf="loggedIn"> <!-- iterates through list of lessons -->
+    Hello!! You are logged in!
+  </div>
+
+  <div *ngIf="!loggedIn"> <!-- iterates through list of lessons -->
+    Oh dear!! You are not logged in!
+  </div>
+
+</ion-content>
