@@ -14,12 +14,14 @@ export class LoginService {
     authenticateLogin(loginData: LoginData): Promise<AuthStatus> {
     loginData.password = this.hashPassword(loginData.password);
 
+    console.log("loginService loginData:", loginData);
+
     return new Promise(resolve => {
 
       if (loginData.type == "create") {
         this.dataService.createUser(loginData).subscribe(res => {
           console.log("res:", res);
-          resolve(this.checkStatus(res.userAuth, res.passwordAuth, loginData));
+          resolve(this.checkStatus(res.userMatch, res.passwordMatch, loginData));
         }, err => {
           console.log("err:", err)
           if (err.status == 406) {
@@ -30,7 +32,7 @@ export class LoginService {
       } else if (loginData.type == "login") {
         this.dataService.verifyUser(loginData).subscribe(res => {
           console.log("res:", res);
-          resolve(this.checkStatus(res.userAuth, res.passwordAuth, loginData));
+          resolve(this.checkStatus(res.userMatch, res.passwordMatch, loginData));
         })
       } else {
         console.log("Error in login type:", loginData.type);
@@ -45,7 +47,7 @@ export class LoginService {
       this.dataService.updateUser(loginData.username);
       return "authenticated";
     } else if (userAuth && !passwordAuth) {
-      return "usernameFalse";
+      return "passwordFalse";
     }
   }
 

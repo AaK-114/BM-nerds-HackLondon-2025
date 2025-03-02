@@ -1,13 +1,58 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-title>Log In</ion-title>
+    <ion-icon id="modal-dismiss" slot="end" name="close" (click)="modalDismiss()"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">login</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+
+  <ion-segment value="login" (ionChange)="switchOption($event)">
+    <ion-segment-button value="login">
+      <ion-label>Existing Account</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="create">
+      <ion-label>New Account</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+
+  <ion-item>
+    <ion-label>Username:</ion-label>
+    <ion-input type="text" name="username" [(ngModel)]="loginData.username"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Password:</ion-label>
+    <ion-input type="password" name="password" minlength="3" [(ngModel)]="loginData.password"></ion-input>
+  </ion-item>
+
+  <div *ngIf="loginType === 'create'">
+    <ion-item>
+      <ion-label>Confirm Password:</ion-label>
+      <ion-input type="password" name="confirmPassword" [(ngModel)]="loginData.confirmPassword"></ion-input>
+    </ion-item>
+
+  </div>
+
+  <ion-label>
+    Status:
+    {{ loginMessage }}
+  </ion-label>
+
+  <div *ngIf="loginType === 'create'">
+    <ion-button (click)="createAccount()" class="login-btn">
+      <ion-icon name="person-sharp"></ion-icon>
+      <ion-text>Log In</ion-text>
+    </ion-button>
+  </div>
+
+
+  <div *ngIf="loginType === 'login'">
+    <ion-button (click)="logIn()" class="login-btn">
+      <ion-icon name="person-sharp"></ion-icon>
+      <ion-text>Log In</ion-text>
+    </ion-button>
+
+  </div>
+
 </ion-content>

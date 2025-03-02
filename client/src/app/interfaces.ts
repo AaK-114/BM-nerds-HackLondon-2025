@@ -26,8 +26,8 @@ export interface LoginResponse {
   status: number;
   message: string;
   username: string;
-  userAuth: boolean;
-  passwordAuth: boolean;
+  userMatch: boolean;
+  passwordMatch: boolean;
 }
 // export interface LoginResponse {
 // 	statusText: string;
@@ -53,11 +53,13 @@ export interface UserPhoto {
   webviewPath?: string;
 }
 
+export type AuthType = "login" | "create";
+
 export interface LoginData {
   username: string;
   password: string;
   confirmPassword?: string;
-  type: "login" | "create";
+  type: AuthType
 }
 
 let body = {
