@@ -2,6 +2,7 @@
   "profile": {
     "username": "politician2",
     "password": "politician2",
+    "name": "Politician 2",
     "photo": "PROFILE PHOTO 2"
   },
   "userID": "p2",

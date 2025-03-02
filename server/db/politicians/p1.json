@@ -3,6 +3,9 @@
     "username": "politician1",
     "password": "politician1",
     "photo": "PROFILE PHOTO 1",
+    "party": "libDem",
+    "constituency": "TWells",
+    "role_title": "Borough MP",
     "preferences": {}
   },
   "politicianID": "p1",

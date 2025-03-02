@@ -1,0 +1,429 @@
+[
+  {
+    "politicianID": 1,
+    "profile": {
+      "name": "Boris Johnson",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Boris_Johnson_2020.jpg",
+      "party": "Conservative",
+      "constituency": "Uxbridge and South Ruislip",
+      "role_title": "Prime Minister",
+      "preferences": {}
+    },
+    "logs": [
+      {
+        "logID": "l1",
+        "logText": "Had a productive meeting with local business leaders today. Looking forward to driving economic growth!",
+        "logDate": "2025-02-26",
+        "logTime": "10:15",
+        "logImages": [
+          {
+            "ImageID": "i1",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Meeting"
+          },
+          {
+            "ImageID": "i2",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Business"
+          }
+        ],
+        "topicIDs": [3, 12, 18]
+      },
+      {
+        "logID": "l2",
+        "logText": "Visited a local community center this afternoon; great to see everyone engaged and active.",
+        "logDate": "2025-02-28",
+        "logTime": "14:45",
+        "logImages": [
+          {
+            "ImageID": "i3",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Community"
+          }
+        ],
+        "topicIDs": [7, 22]
+      },
+      {
+        "logID": "l3",
+        "logText": "Proud of our progress on infrastructure projects across the nation. Exciting times ahead!",
+        "logDate": "2025-03-01",
+        "logTime": "09:30",
+        "logImages": [
+          {
+            "ImageID": "i4",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Infrastructure"
+          }
+        ],
+        "topicIDs": [1, 15, 20, 5]
+      }
+    ]
+  },
+  {
+    "politicianID": 2,
+    "profile": {
+      "name": "Emmanuel Macron",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Emmanuel_Macron_%28cropped%29.jpg",
+      "party": "La République En Marche",
+      "constituency": "Paris",
+      "role_title": "President",
+      "preferences": {}
+    },
+    "logs": [
+      {
+        "logID": "l1",
+        "logText": "Had an inspiring discussion with young innovators in Paris today, pushing forward a tech-driven future.",
+        "logDate": "2025-02-25",
+        "logTime": "11:00",
+        "logImages": [
+          {
+            "ImageID": "i1",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Innovation"
+          },
+          {
+            "ImageID": "i2",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Paris"
+          }
+        ],
+        "topicIDs": [2, 9, 17]
+      },
+      {
+        "logID": "l2",
+        "logText": "Today's meeting emphasized unity and progress. Together, we can build a stronger Europe.",
+        "logDate": "2025-02-27",
+        "logTime": "16:20",
+        "logImages": [
+          {
+            "ImageID": "i3",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Europe"
+          }
+        ],
+        "topicIDs": [4, 11, 21, 23]
+      }
+    ]
+  },
+  {
+    "politicianID": 3,
+    "profile": {
+      "name": "Narendra Modi",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Narendra_Modi_2014.jpg",
+      "party": "Bharatiya Janata Party",
+      "constituency": "Gujarat",
+      "role_title": "Prime Minister",
+      "preferences": {}
+    },
+    "logs": [
+      {
+        "logID": "l1",
+        "logText": "Just concluded a rally in Gujarat; the energy of the people is truly inspiring.",
+        "logDate": "2025-02-24",
+        "logTime": "08:30",
+        "logImages": [
+          {
+            "ImageID": "i1",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Rally"
+          },
+          {
+            "ImageID": "i2",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Gujarat"
+          }
+        ],
+        "topicIDs": [5, 10, 15, 22]
+      },
+      {
+        "logID": "l2",
+        "logText": "Engaging with farmers and community leaders today to discuss sustainable development.",
+        "logDate": "2025-02-26",
+        "logTime": "13:15",
+        "logImages": [
+          {
+            "ImageID": "i3",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Farmers"
+          }
+        ],
+        "topicIDs": [6, 18]
+      },
+      {
+        "logID": "l3",
+        "logText": "Honored to announce new initiatives aimed at boosting rural innovation and infrastructure.",
+        "logDate": "2025-02-28",
+        "logTime": "10:50",
+        "logImages": [
+          {
+            "ImageID": "i4",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Initiatives"
+          }
+        ],
+        "topicIDs": [3, 8, 19]
+      }
+    ]
+  },
+  {
+    "politicianID": 4,
+    "profile": {
+      "name": "Justin Trudeau",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Justin_Trudeau_(cropped).jpg",
+      "party": "Liberal",
+      "constituency": "Papineau, Quebec",
+      "role_title": "Prime Minister",
+      "preferences": {}
+    },
+    "logs": [
+      {
+        "logID": "l1",
+        "logText": "Had a meaningful conversation with indigenous leaders today, reaffirming our commitment to reconciliation.",
+        "logDate": "2025-02-25",
+        "logTime": "12:00",
+        "logImages": [
+          {
+            "ImageID": "i1",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Dialogue"
+          }
+        ],
+        "topicIDs": [1, 14, 20]
+      },
+      {
+        "logID": "l2",
+        "logText": "Celebrating the progress in renewable energy projects across Canada. The future is green!",
+        "logDate": "2025-02-27",
+        "logTime": "15:45",
+        "logImages": [
+          {
+            "ImageID": "i2",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Renewable"
+          },
+          {
+            "ImageID": "i3",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Canada"
+          }
+        ],
+        "topicIDs": [7, 12]
+      }
+    ]
+  },
+  {
+    "politicianID": 5,
+    "profile": {
+      "name": "Jacinda Ardern",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/3/33/Jacinda_Ardern.jpg",
+      "party": "Labour",
+      "constituency": "Mount Albert, Auckland",
+      "role_title": "Prime Minister",
+      "preferences": {}
+    },
+    "logs": [
+      {
+        "logID": "l1",
+        "logText": "Today I visited a community center in Auckland and witnessed the incredible spirit of our people.",
+        "logDate": "2025-02-26",
+        "logTime": "09:00",
+        "logImages": [
+          {
+            "ImageID": "i1",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Auckland"
+          }
+        ],
+        "topicIDs": [2, 8, 16]
+      }
+    ]
+  },
+  {
+    "politicianID": 6,
+    "profile": {
+      "name": "Angela Merkel",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Angela_Merkel_2019.jpg",
+      "party": "CDU",
+      "constituency": "Germany",
+      "role_title": "Chancellor",
+      "preferences": {}
+    },
+    "logs": [
+      {
+        "logID": "l1",
+        "logText": "Discussed critical economic reforms with industry leaders today in Berlin.",
+        "logDate": "2025-02-24",
+        "logTime": "14:10",
+        "logImages": [
+          {
+            "ImageID": "i1",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Berlin"
+          }
+        ],
+        "topicIDs": [3, 11, 17]
+      },
+      {
+        "logID": "l2",
+        "logText": "A productive day working towards a more unified Europe and stronger international ties.",
+        "logDate": "2025-02-27",
+        "logTime": "17:30",
+        "logImages": [
+          {
+            "ImageID": "i2",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Unity"
+          }
+        ],
+        "topicIDs": [5, 9, 24, 20]
+      }
+    ]
+  },
+  {
+    "politicianID": 7,
+    "profile": {
+      "name": "Sadiq Khan",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Sadiq_Khan_%28cropped%29.jpg",
+      "party": "Labour",
+      "constituency": "London",
+      "role_title": "Mayor",
+      "preferences": {}
+    },
+    "logs": [
+      {
+        "logID": "l1",
+        "logText": "Visited a new housing development in East London; our city is growing and evolving.",
+        "logDate": "2025-02-25",
+        "logTime": "10:05",
+        "logImages": [
+          {
+            "ImageID": "i1",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Housing"
+          },
+          {
+            "ImageID": "i2",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=East+London"
+          }
+        ],
+        "topicIDs": [1, 7, 13]
+      },
+      {
+        "logID": "l2",
+        "logText": "Engaging with community leaders to ensure our neighborhoods remain safe and vibrant.",
+        "logDate": "2025-02-28",
+        "logTime": "11:20",
+        "logImages": [
+          {
+            "ImageID": "i3",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Community"
+          }
+        ],
+        "topicIDs": [4, 14]
+      },
+      {
+        "logID": "l3",
+        "logText": "Proud to announce new initiatives for cleaner public transport in our great city.",
+        "logDate": "2025-03-01",
+        "logTime": "08:45",
+        "logImages": [
+          {
+            "ImageID": "i4",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Transport"
+          }
+        ],
+        "topicIDs": [2, 8, 15, 23]
+      }
+    ]
+  },
+  {
+    "politicianID": 8,
+    "profile": {
+      "name": "Laura Trevelyan",
+      "photo": "https://dummyimage.com/200x200/000/fff&text=Laura+Trevelyan",
+      "party": "Conservative",
+      "constituency": "Tunbridge Wells",
+      "role_title": "MP",
+      "preferences": {}
+    },
+    "logs": [
+      {
+        "logID": "l1",
+        "logText": "Today I held a town hall in Tunbridge Wells to listen to local concerns and ideas.",
+        "logDate": "2025-02-26",
+        "logTime": "13:00",
+        "logImages": [
+          {
+            "ImageID": "i1",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Town+Hall"
+          }
+        ],
+        "topicIDs": [3, 10, 19]
+      },
+      {
+        "logID": "l2",
+        "logText": "Excited to unveil plans for improving local public services and infrastructure.",
+        "logDate": "2025-02-28",
+        "logTime": "16:00",
+        "logImages": [
+          {
+            "ImageID": "i2",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Services"
+          },
+          {
+            "ImageID": "i3",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Infrastructure"
+          }
+        ],
+        "topicIDs": [5, 12, 22]
+      }
+    ]
+  },
+  {
+    "politicianID": 9,
+    "profile": {
+      "name": "Daniel Foster",
+      "photo": "https://dummyimage.com/200x200/000/fff&text=Daniel+Foster",
+      "party": "Labour",
+      "constituency": "London",
+      "role_title": "Councillor",
+      "preferences": {}
+    },
+    "logs": [
+      {
+        "logID": "l1",
+        "logText": "Met with local residents in London to discuss urban development and affordable housing.",
+        "logDate": "2025-02-27",
+        "logTime": "12:30",
+        "logImages": [
+          {
+            "ImageID": "i1",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=London+Housing"
+          }
+        ],
+        "topicIDs": [6, 11, 20, 25]
+      }
+    ]
+  },
+  {
+    "politicianID": 10,
+    "profile": {
+      "name": "Fiona Gallagher",
+      "photo": "https://dummyimage.com/200x200/000/fff&text=Fiona+Gallagher",
+      "party": "Conservative",
+      "constituency": "Tunbridge Wells",
+      "role_title": "Councillor",
+      "preferences": {}
+    },
+    "logs": [
+      {
+        "logID": "l1",
+        "logText": "Visited community centers in Tunbridge Wells today; proud to see strong community spirit.",
+        "logDate": "2025-02-25",
+        "logTime": "09:45",
+        "logImages": [
+          {
+            "ImageID": "i1",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Community+Center"
+          }
+        ],
+        "topicIDs": [2, 13]
+      },
+      {
+        "logID": "l2",
+        "logText": "Announcing a new initiative aimed at improving local education and public safety.",
+        "logDate": "2025-02-28",
+        "logTime": "14:00",
+        "logImages": [
+          {
+            "ImageID": "i2",
+            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Education"
+          }
+        ],
+        "topicIDs": [7, 16, 21]
+      }
+    ]
+  }
+]

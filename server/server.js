@@ -71,6 +71,33 @@ router.post("/auth/:username/:password", function (req, res) { // POST HTTP requ
   });
 });
 
+router.get("/:username", function (req, res) { // GET HTTP request with parameters
+  console.log(`GET request from user:  ${req.params.username}`)
+  action.getUserData(req.params.username,function (data) { // get action called from action.js
+    if (data) {
+      res.status(200).json({ // response if any data found
+        "status": 200,
+        "statusText": "OK",
+        "message": `Data retrieved for: ${req.params.username}`,
+        "data": data // data is returned in response
+      });
+    } else {
+      res.status(404).json({ // response if not data found
+        "status": 404,
+        "statusText": "NOT FOUND",
+        "message": `Data could not be found for: ${req.params.username}`
+      });
+    }
+  }, function (err) {
+    console.error(err);
+    res.status(404).json({ // response if user not found
+      "status": 404,
+      "statusText": "NOT FOUND",
+      "message": `The user: ${req.params.username} could not be found.`
+    });
+  });
+});
+//
 // router.get("/:username/:category", function (req, res) { // GET HTTP request with parameters
 //   console.log(`GET request for category: ${req.params.category} from user:  ${req.params.username}`)
 //   action.get(req.params.username, req.params.category, function (data) { // get action called from action.js
@@ -97,7 +124,7 @@ router.post("/auth/:username/:password", function (req, res) { // POST HTTP requ
 //     });
 //   });
 // });
-//
+
 // router.post("/:username/:category/", function (req, res) { // POST HTTP request with parameters
 //   console.log(`POST request to category: ${req.params.category} of user: ${req.params.username}`)
 //   action.post(req.params.username, req.params.category, req.body, function (data) { // post action called from action.js

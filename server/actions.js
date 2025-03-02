@@ -17,6 +17,18 @@ const template = data => {
     }
 }
 
+let userDataExport = compiledData => {
+    return{
+        "username": "",
+        "constituency": "",
+        "yayPeople": [],
+        "maybePeople": [],
+        "nayPeople": [],
+        "topicIDs": []
+    }
+}
+
+
 let action = { // object with CRUD actions for export
     authUser: function (username, password, resolve, reject) {
         if (fs.readdirSync('./db/users').includes(`${username}.json`)) { // checks filenames in database folder
@@ -44,17 +56,52 @@ let action = { // object with CRUD actions for export
                 }
             });
         }
-    }
-//     get: function (username, category, resolve, reject) { // takes username and category as parameters
-//         fs.readFile(path(username), function (err, data) { // reads the user's file for data
-//             if (err) {
-//                 reject(err); // promise rejected, error returned
-//             } else {
-//                 let match = JSON.parse(data)[category] // parses data from JSON format and returns only category field given
-//                 resolve(match); // promise resolved, the matching category is returned
-//             }
-//         })
-//     },
+    },
+    getUserData: function (username, resolve, reject) { // takes username and category as parameters
+        fs.readFile(path(username), 'utf8', function (err, data) { // reads the user's file for data
+            if (err) {
+                reject(err); // promise rejected, error returned
+            } else {
+                let match = JSON.parse(data.toString('utf8') )// parses data from JSON format and returns only category field given
+                if (match) {
+                    console.log(match)
+
+                    const LIST = JSON.parse(fs.readFileSync('./db/politicians.json','utf8'))
+
+                    let compiledData = {
+                        "username": match.profile.username,
+                        "constituency": match.constituency,
+                        // "yayPeopleIDs": match.yayPeople,
+                        // "maybePeopleIDs": match.maybePeople,
+                        // "nayPeopleIDs": match.nayPeople,
+                        // "topicIDs": match.topicIDs,
+                        "yayPeople": LIST.filter(p => match.yayPeople.includes(p.politicianID)),
+                        "maybePeople": LIST.filter(p => match.maybePeople.includes(p.politicianID)),
+                        "nayPeople": LIST.filter(p => match.nayPeople.includes(p.politicianID)),
+                        "topics": LIST.map(p => ({
+                            ...p,
+                            logs: p.logs.filter(log => log.topicIDs.some(t => match.topicIDs.includes(t)))
+                        }))
+                            .filter(p => p.logs.length)
+                    }
+                    resolve(compiledData);
+                } else {
+                    reject("No User Data Found")
+                }
+                 // promise resolved, the matching category is returned
+            }
+        })
+    },
+    // get: function (username, category, resolve, reject) { // takes username and category as parameters
+    //     fs.readFile(path(username), function (err, data) { // reads the user's file for data
+    //         if (err) {
+    //             reject(err); // promise rejected, error returned
+    //         } else {
+    //             let match = JSON.parse(data)[category] // parses data from JSON format and returns only category field given
+    //             resolve(match); // promise resolved, the matching category is returned
+    //         }
+    //     })
+    // },
 //     post: function (user, category, newData, resolve, reject) { // takes user, category and newData as parameters
 //         fs.readFile(path(user), function (err, data) { // reads the user's file for data
 //             if (err) {
