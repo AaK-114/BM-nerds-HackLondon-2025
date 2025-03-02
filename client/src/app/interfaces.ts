@@ -34,6 +34,7 @@ export interface PoliticianPublicData {
     party: string;
     constituency: string;
     roleTitle: string;
+    locality?: string;
   };
   logs: Log[];
   policies?: string[];
