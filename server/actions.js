@@ -78,7 +78,7 @@ let action = { // object with CRUD actions for export
                         "yayPeople": LIST.filter(p => match.yayPeople.includes(p.politicianID)),
                         "maybePeople": LIST.filter(p => match.maybePeople.includes(p.politicianID)),
                         "nayPeople": LIST.filter(p => match.nayPeople.includes(p.politicianID)),
-                        "topics": LIST.map(p => ({
+                        "topicPosts": LIST.map(p => ({
                             ...p,
                             logs: p.logs.filter(log => log.topicIDs.some(t => match.topicIDs.includes(t)))
                         }))

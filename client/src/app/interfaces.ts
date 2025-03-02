@@ -1,19 +1,57 @@
-
-export interface UserData {
-  info: {
-    username: string;
-    password: string;
-    preferences: {}
-  }
-}
+//
+// export interface UserData {
+//   info: {
+//     username: string;
+//     password: string;
+//     preferences: {}
+//   }
+// }
 
 // export interface ServerResponse<Type> {
 export interface ServerResponse {
   statusText: string;
   status: number;
   message: string;
-  data: any
+  data: userDataExport;
 }
+
+export interface userDataExport {
+  username: string;
+  constituency: string;
+  yayPeople: PoliticianPublicData[];
+  maybePeople: PoliticianPublicData[];
+  nayPeople: PoliticianPublicData[];
+
+  topicPosts: PoliticianPublicData[];
+}
+
+export interface PoliticianPublicData {
+  politicianID: string;
+  profile: {
+    name: string;
+    photo: string;
+    party: string;
+    constituency: string;
+    roleTitle: string;
+  };
+  logs: Log[];
+  policies?: string[];
+}
+
+export interface Log {
+  logID: string;
+  logText: string;
+  logDate: string;
+  logTime: string;
+  logImages: Image[];
+  topicIDs: string[];
+}
+
+export interface Image {
+  ImageID: string;
+  ImageData: string;
+}
+
 // export interface ServerResponse {
 // 	statusText: string;
 // 	status: number;
@@ -45,8 +83,6 @@ export interface LoginAuth {
 }
 
 export type AuthStatus = "authenticated" | "passwordFalse" | "usernameFalse" | "exists"
-
-export type Image = any // change later
 
 export interface UserPhoto {
   filepath: string;

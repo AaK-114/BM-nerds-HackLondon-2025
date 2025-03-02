@@ -39,7 +39,7 @@ export class DataService {
     return this.activeUser.asObservable();
   }
 
-  printUser() :string {
+  fetchUser() :string {
     let activeUser;
     this.getUser().subscribe(user => {
       activeUser = user;
@@ -47,5 +47,11 @@ export class DataService {
     // @ts-ignore
     return activeUser;
   }
+
+
+  getUserData(): Observable<ServerResponse> {
+    return this.http.get<ServerResponse>(this.url + this.fetchUser(), this.options)
+  }
+
 
 }

@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonSearchbar, IonAvatar, IonChip, IonIcon, IonLabel, IonItem, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCol, IonGrid, IonRow, IonSegment, IonSegmentButton, IonSegmentContent, IonSegmentView } from '@ionic/angular/standalone';
 import { ExploreContainerComponent } from '../explore-container/explore-container.component';
 import { addIcons } from 'ionicons';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { close, closeCircle, pin } from 'ionicons/icons';
+import { DataService} from "../services/data.service";
+import {PoliticianPublicData, ServerResponse, userDataExport} from "../interfaces";
+import {IonicModule} from "@ionic/angular";
 
 interface Politician {
   name: string;
@@ -15,14 +18,53 @@ interface Politician {
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss'],
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent, IonSearchbar, IonAvatar, IonChip, IonIcon, IonLabel, IonItem, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCol, IonGrid, IonRow, IonSegment, IonSegmentButton, IonSegmentContent, IonSegmentView, CommonModule, FormsModule ]
+  imports: [IonicModule, CommonModule, FormsModule ]
 })
 
+export class Tab2Page implements OnInit {
 
-export class Tab2Page {
+  yayPoliticians: PoliticianPublicData[] = [];
+  maybePoliticians: PoliticianPublicData[] = [];
+  nayPoliticians: PoliticianPublicData[] = [];
+
+  topicPosts: PoliticianPublicData[] = [];
+
+  constructor(private dataService: DataService) {
+    addIcons({ close, closeCircle, pin });
+  }
+
+  ngOnInit() {
+    this.dataService.getUser().subscribe(user => {
+      console.log("Logged in as:", user);
+      this.getUserData();
+    })
+  }
+
+  getUserData() {
+    this.dataService.getUserData().subscribe((res: ServerResponse) => {
+      let dataImport = res.data as userDataExport;
+      this.yayPoliticians = dataImport.yayPeople // imports as a list of PPL
+      this.maybePoliticians = dataImport.maybePeople // imports as a list of PPL
+      this.nayPoliticians = dataImport.nayPeople // imports as a list of PPL
+
+      this.topicPosts = dataImport.topicPosts // imports as a list of PPL
+
+      console.log(this.yayPoliticians, this.maybePoliticians, this.nayPoliticians, this.topicPosts);
+    })
+  }
+
+  openBio(politicianID: string) {
+
+  }
+
+
+
+
+
+
 
   searchQuery: string = '';
-  
+
   CabinetPoliticians: Politician[] = [
     { name: 'Corrupt Politician', image: 'https://ionicframework.com/docs/img/demos/card-media.png' },
     { name: 'Kray Zee Mann', image: 'https://ionicframework.com/docs/img/demos/card-media.png' },
@@ -61,10 +103,7 @@ export class Tab2Page {
   filteredSupportedPoliticians = [...this.SupportedPoliticians];
   filteredNeutralPoliticians = [...this.NeutralPoliticians];
   filteredDislikedPoliticians = [...this.DislikedPoliticians];
-  
-  constructor() {
-    addIcons({ close, closeCircle, pin });
-  }
+
 
   filterPoliticians(event: any) {
     const searchTerm = event.target.value.toLowerCase(); // Convert to lowercase for case-insensitive search

@@ -33,7 +33,7 @@
       </ion-item>
 
       <!--Cabinets-->
-      
+
       <ion-grid>
         <ion-row>
           <ion-col size="6" size-md="4" size-lg="3" *ngFor="let Politician of filteredCabinetPoliticians">
@@ -46,12 +46,12 @@
           </ion-col>
         </ion-row>
       </ion-grid>
-    
+
       <!-- My Locals page-->
       <ion-item>
         <ion-label>My Locals </ion-label>
       </ion-item>
-    
+
       <ion-grid>
         <ion-row>
           <ion-col size="6" size-md="4" size-lg="3" *ngFor="let Politician of filteredLocalPoliticians">
@@ -64,13 +64,13 @@
           </ion-col>
         </ion-row>
       </ion-grid>
-    
+
       <!-- Internationals page-->
-    
+
       <ion-item>
         <ion-label>International </ion-label>
       </ion-item>
-      
+
       <ion-grid>
         <ion-row>
           <ion-col size="6" size-md="4" size-lg="3" *ngFor="let Politician of filteredInternationalPoliticians">
@@ -85,67 +85,75 @@
       </ion-grid>
     </ion-segment-content>
 
+
+
+
+
+
+
     <!--Favouribility sort-->
     <ion-segment-content id="favour">
       <ion-item>
         <ion-label>Supported</ion-label>
       </ion-item>
 
-      
-    
-      <!--Supported page-->
-      
+
+
+      <!--Supported page (YAY) -->
+
       <ion-grid>
         <ion-row>
-          <ion-col size="6" size-md="4" size-lg="3" *ngFor="let Politician of filteredSupportedPoliticians">
-            <ion-card>
-              <img alt="{{ Politician.name }}" [src]="Politician.image" />
+          <ion-col size="6" size-md="4" size-lg="3" *ngFor="let p of yayPoliticians">
+            <ion-card (click)="openBio(p.politicianID)">
+              <img alt="{{ p.profile.name }}" [src]="p.profile.photo" />
               <ion-card-header>
-                <ion-card-title>{{ Politician.name }}</ion-card-title>
+                <ion-card-title>{{ p.profile.name }}</ion-card-title>
+                <ion-card-subtitle>{{ p.profile.roleTitle }}</ion-card-subtitle>
               </ion-card-header>
             </ion-card>
           </ion-col>
         </ion-row>
       </ion-grid>
-    
-      <!-- Neutral page-->
+
+      <!-- Neutral page (MAYBE) -->
       <ion-item>
-        <ion-label>Neural </ion-label>
+        <ion-label>Neutral </ion-label>
       </ion-item>
-    
+
       <ion-grid>
         <ion-row>
-          <ion-col size="6" size-md="4" size-lg="3" *ngFor="let Politician of filteredNeutralPoliticians">
-            <ion-card>
-              <img alt="{{ Politician.name }}" [src]="Politician.image" />
+          <ion-col size="6" size-md="4" size-lg="3" *ngFor="let p of maybePoliticians">
+            <ion-card (click)="openBio(p.politicianID)">
+              <img alt="{{ p.profile.name }}" [src]="p.profile.photo" />
               <ion-card-header>
-                <ion-card-title>{{ Politician.name }}</ion-card-title>
+                <ion-card-title>{{ p.profile.name }}</ion-card-title>
+                <ion-card-subtitle>{{ p.profile.roleTitle }}</ion-card-subtitle>
               </ion-card-header>
             </ion-card>
           </ion-col>
         </ion-row>
       </ion-grid>
-    
-      <!-- disliked page-->
-    
+
+      <!-- disliked page (NAY) -->
+
       <ion-item>
         <ion-label>Disliked </ion-label>
       </ion-item>
-      
+
       <ion-grid>
         <ion-row>
-          <ion-col size="6" size-md="4" size-lg="3" *ngFor="let Politician of filteredDislikedPoliticians">
-            <ion-card>
-              <img alt="{{ Politician.name }}" [src]="Politician.image" />
+          <ion-col size="6" size-md="4" size-lg="3" *ngFor="let p of yayPoliticians">
+            <ion-card (click)="openBio(p.politicianID)">
+              <img alt="{{ p.profile.name }}" [src]="p.profile.photo" />
               <ion-card-header>
-                <ion-card-title>{{ Politician.name }}</ion-card-title>
+                <ion-card-title>{{ p.profile.name }}</ion-card-title>
+                <ion-card-subtitle>{{ p.profile.roleTitle }}</ion-card-subtitle>
               </ion-card-header>
             </ion-card>
           </ion-col>
         </ion-row>
       </ion-grid>
+
     </ion-segment-content>
   </ion-segment-view>
-
-  
 </ion-content>

@@ -3,10 +3,10 @@
     "politicianID": 1,
     "profile": {
       "name": "Boris Johnson",
-      "photo": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Boris_Johnson_2020.jpg",
+      "photo": "https://imgs.search.brave.com/fPTwMuADk11N8n6OIRy0EMRdgS79QA5uzfPUn2FVwLw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YWxqYXplZXJhLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/Mi8wOS8wMDBfMzJB/WDNEOS5qcGc_cmVz/aXplPTU3MCwzODAm/cXVhbGl0eT04MA",
       "party": "Conservative",
       "constituency": "Uxbridge and South Ruislip",
-      "role_title": "Prime Minister",
+      "roleTitle": "Prime Minister",
       "preferences": {}
     },
     "logs": [
@@ -62,7 +62,7 @@
       "photo": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Emmanuel_Macron_%28cropped%29.jpg",
       "party": "La République En Marche",
       "constituency": "Paris",
-      "role_title": "President",
+      "roleTitle": "President",
       "preferences": {}
     },
     "logs": [
@@ -105,7 +105,7 @@
       "photo": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Narendra_Modi_2014.jpg",
       "party": "Bharatiya Janata Party",
       "constituency": "Gujarat",
-      "role_title": "Prime Minister",
+      "roleTitle": "Prime Minister",
       "preferences": {}
     },
     "logs": [
@@ -161,7 +161,7 @@
       "photo": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Justin_Trudeau_(cropped).jpg",
       "party": "Liberal",
       "constituency": "Papineau, Quebec",
-      "role_title": "Prime Minister",
+      "roleTitle": "Prime Minister",
       "preferences": {}
     },
     "logs": [
@@ -204,7 +204,7 @@
       "photo": "https://upload.wikimedia.org/wikipedia/commons/3/33/Jacinda_Ardern.jpg",
       "party": "Labour",
       "constituency": "Mount Albert, Auckland",
-      "role_title": "Prime Minister",
+      "roleTitle": "Prime Minister",
       "preferences": {}
     },
     "logs": [
@@ -230,7 +230,7 @@
       "photo": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Angela_Merkel_2019.jpg",
       "party": "CDU",
       "constituency": "Germany",
-      "role_title": "Chancellor",
+      "roleTitle": "Chancellor",
       "preferences": {}
     },
     "logs": [
@@ -269,7 +269,7 @@
       "photo": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Sadiq_Khan_%28cropped%29.jpg",
       "party": "Labour",
       "constituency": "London",
-      "role_title": "Mayor",
+      "roleTitle": "Mayor",
       "preferences": {}
     },
     "logs": [
@@ -325,7 +325,7 @@
       "photo": "https://dummyimage.com/200x200/000/fff&text=Laura+Trevelyan",
       "party": "Conservative",
       "constituency": "Tunbridge Wells",
-      "role_title": "MP",
+      "roleTitle": "MP",
       "preferences": {}
     },
     "logs": [
@@ -368,7 +368,7 @@
       "photo": "https://dummyimage.com/200x200/000/fff&text=Daniel+Foster",
       "party": "Labour",
       "constituency": "London",
-      "role_title": "Councillor",
+      "roleTitle": "Councillor",
       "preferences": {}
     },
     "logs": [
@@ -394,7 +394,7 @@
       "photo": "https://dummyimage.com/200x200/000/fff&text=Fiona+Gallagher",
       "party": "Conservative",
       "constituency": "Tunbridge Wells",
-      "role_title": "Councillor",
+      "roleTitle": "Councillor",
       "preferences": {}
     },
     "logs": [
