@@ -18,11 +18,11 @@
         "logImages": [
           {
             "ImageID": "i1",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Meeting"
+            "ImageData": "https://static.standard.co.uk/s3fs-public/thumbnails/image/2019/07/25/09/Cabinet.jpg?width=2500&auto=webp&quality=75"
           },
           {
             "ImageID": "i2",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Business"
+            "ImageData": "https://live.staticflickr.com/65535/52079952628_6f13467680_b.jpg"
           }
         ],
         "topicIDs": [3, 12, 18]
@@ -35,7 +35,7 @@
         "logImages": [
           {
             "ImageID": "i3",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Community"
+            "ImageData": "https://www.telegraph.co.uk/content/dam/news/2021/10/04/273399013_Pingpong_trans_NvBQzQNjv4BqqVzuuqpFlyLIwiB6NTmJwfSVWeZ_vEN7c6bHu2jJnT8.jpg?imwidth=480"
           }
         ],
         "topicIDs": [7, 22]
@@ -48,7 +48,7 @@
         "logImages": [
           {
             "ImageID": "i4",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Infrastructure"
+            "ImageData": "https://www.ukconstructionmedia.co.uk/wp-content/uploads/Mayor-of-London-calls-for-major-infrastructure-investment.jpg"
           }
         ],
         "topicIDs": [1, 15, 20, 5]
@@ -74,11 +74,11 @@
         "logImages": [
           {
             "ImageID": "i1",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Innovation"
+            "ImageData": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iReJRnqXhPPs/v1/-1x-1.jpg"
           },
           {
             "ImageID": "i2",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Paris"
+            "ImageData": "https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900"
           }
         ],
         "topicIDs": [2, 9, 17]
@@ -91,7 +91,7 @@
         "logImages": [
           {
             "ImageID": "i3",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Europe"
+            "ImageData": "https://apiwp.thelocal.com/wp-content/uploads/2018/12/e0b1ef9bf4b232ef7bbe246bacbf740feee79b7bbac4af25ec614be9fdaa5fae-846x563.jpg"
           }
         ],
         "topicIDs": [4, 11, 21, 23]
@@ -117,11 +117,11 @@
         "logImages": [
           {
             "ImageID": "i1",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Rally"
+            "ImageData": "https://4.bp.blogspot.com/-I3dKxUWg9Z0/U2XvNQzbfRI/AAAAAAAAWWM/PS1MlmsTIUw/s1600/cm-and-c-narendra-modi-rally-full-hd-wallpaper.jpg"
           },
           {
             "ImageID": "i2",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Gujarat"
+            "ImageData": "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2017/11/30/628670-bjp-supporters-110317.jpg"
           }
         ],
         "topicIDs": [5, 10, 15, 22]
@@ -134,7 +134,7 @@
         "logImages": [
           {
             "ImageID": "i3",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Farmers"
+            "ImageData": "https://tfipost.com/wp-content/uploads/2019/02/modi-farmers.jpg"
           }
         ],
         "topicIDs": [6, 18]
@@ -147,7 +147,7 @@
         "logImages": [
           {
             "ImageID": "i4",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Initiatives"
+            "ImageData": "https://timesofindia.indiatimes.com/photo/msid-69743273,imgsize-443232.cms"
           }
         ],
         "topicIDs": [3, 8, 19]
@@ -173,7 +173,8 @@
         "logImages": [
           {
             "ImageID": "i1",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Dialogue"
+            "ImageData": "https://static.attn.com/sites/default/files/13051592_10154259396340649_3676967092413162223_n.jpg?auto=format&crop=faces&fit=crop&q=60&w=736&ixlib=js-1.1.0
+"
           }
         ],
         "topicIDs": [1, 14, 20]
@@ -186,11 +187,11 @@
         "logImages": [
           {
             "ImageID": "i2",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Renewable"
+            "ImageData": "https://i.ytimg.com/vi/UVpiCgNi5l0/maxresdefault.jpg"
           },
           {
             "ImageID": "i3",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Canada"
+            "ImageData": "https://climatefundmanagers.com/wp-content/uploads/2019/06/PR_03.jpg"
           }
         ],
         "topicIDs": [7, 12]
@@ -216,7 +217,8 @@
         "logImages": [
           {
             "ImageID": "i1",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Auckland"
+            "ImageData": "https://www.aucklandchinese.nz/wp-content/uploads/2022/04/20211215_200939-2048x1536.jpg
+"
           }
         ],
         "topicIDs": [2, 8, 16]
@@ -242,7 +244,7 @@
         "logImages": [
           {
             "ImageID": "i1",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Berlin"
+            "ImageData": "https://www.patoneando.com/wp-content/uploads/2018/11/que-ver-y-que-hacer-en-Berl%C3%ADn-Catedral-de-Berl%C3%ADn-Berliner-Dom-Patoneando-blog-de-viajes-11.jpg"
           }
         ],
         "topicIDs": [3, 11, 17]
@@ -255,7 +257,7 @@
         "logImages": [
           {
             "ImageID": "i2",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Unity"
+            "ImageData": "http://static.kremlin.ru/media/events/photos/big2x/9TRYdQolVPb94j7pht11BFrxlJhsO1eP.jpeg"
           }
         ],
         "topicIDs": [5, 9, 24, 20]
@@ -281,11 +283,11 @@
         "logImages": [
           {
             "ImageID": "i1",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Housing"
+            "ImageData": "https://static.standard.co.uk/2024/05/10/16/05/IMG_2108.jpg.jpg?crop=8:5,smart&quality=75&auto=webp&width=960"
           },
           {
             "ImageID": "i2",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=East+London"
+            "ImageData": "https://thumbs.dreamstime.com/b/council-housing-flats-east-london-facade-brownfield-92248706.jpg"
           }
         ],
         "topicIDs": [1, 7, 13]
@@ -298,7 +300,7 @@
         "logImages": [
           {
             "ImageID": "i3",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Community"
+            "ImageData": "https://idsb.tmgrup.com.tr/ly/uploads/images/2021/05/10/thumbs/800x531/113979.jpg?v=1620654370"
           }
         ],
         "topicIDs": [4, 14]
@@ -311,7 +313,7 @@
         "logImages": [
           {
             "ImageID": "i4",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Transport"
+            "ImageData": "https://cdn.uniacco.com/blog/wp-content/uploads/2019/12/09124221/london-public-transport.jpg"
           }
         ],
         "topicIDs": [2, 8, 15, 23]
@@ -322,7 +324,7 @@
     "politicianID": 8,
     "profile": {
       "name": "Laura Trevelyan",
-      "photo": "https://dummyimage.com/200x200/000/fff&text=Laura+Trevelyan",
+      "photo": "https://apex.aero/wp-content/uploads/2020/08/Laura-T-scaled.jpeg",
       "party": "Conservative",
       "constituency": "Tunbridge Wells",
       "roleTitle": "MP",
@@ -337,7 +339,7 @@
         "logImages": [
           {
             "ImageID": "i1",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Town+Hall"
+            "ImageData": "https://s0.geograph.org.uk/geophotos/04/32/46/4324688_4b128686.jpg"
           }
         ],
         "topicIDs": [3, 10, 19]
@@ -350,11 +352,11 @@
         "logImages": [
           {
             "ImageID": "i2",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Services"
+            "ImageData": "https://media.npr.org/assets/img/2023/04/24/reparations-forum-2023---prime-minister-hon-dickon-mitchell-and-laura-trevelyan-c02df1be89eaaacd6547e8f40c084686e7a8e832-s1200.jpg"
           },
           {
             "ImageID": "i3",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Infrastructure"
+            "ImageData": "https://www.castleccl.co.uk/wp-content/uploads/2023/05/Tunbridge-Wells_Cam02_Sep21-Update_4k_v2-scaled-e1695023600301-1024x581.jpg"
           }
         ],
         "topicIDs": [5, 12, 22]
