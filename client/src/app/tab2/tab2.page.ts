@@ -1,13 +1,12 @@
 import {Component, OnInit} from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonSearchbar, IonAvatar, IonChip, IonIcon, IonLabel, IonItem, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCol, IonGrid, IonRow, IonSegment, IonSegmentButton, IonSegmentContent, IonSegmentView } from '@ionic/angular/standalone';
-import { ExploreContainerComponent } from '../explore-container/explore-container.component';
 import { addIcons } from 'ionicons';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { close, closeCircle, pin } from 'ionicons/icons';
-import { DataService} from "../services/data.service";
+import { DataService } from "../services/data.service";
 import {PoliticianPublicData, ServerResponse, userDataExport} from "../interfaces";
 import {IonicModule} from "@ionic/angular";
+import {Router} from "@angular/router";
 
 interface Politician {
   name: string;
@@ -18,7 +17,7 @@ interface Politician {
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss'],
-  imports: [IonicModule, CommonModule, FormsModule ]
+  imports: [IonicModule, CommonModule, FormsModule]
 })
 
 export class Tab2Page implements OnInit {
@@ -29,7 +28,7 @@ export class Tab2Page implements OnInit {
 
   topicPosts: PoliticianPublicData[] = [];
 
-  constructor(private dataService: DataService) {
+  constructor(private dataService: DataService, private router: Router) {
     addIcons({ close, closeCircle, pin });
   }
 
@@ -54,6 +53,7 @@ export class Tab2Page implements OnInit {
   }
 
   openBio(politicianID: string) {
+    this.router.navigate(['tabs', 'tab1', politicianID]);
 
   }
 

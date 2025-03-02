@@ -50,7 +50,11 @@ export class DataService {
 
 
   getUserData(): Observable<ServerResponse> {
-    return this.http.get<ServerResponse>(this.url + this.fetchUser(), this.options)
+    return this.http.get<ServerResponse>(this.url + 'user/' + this.fetchUser(), this.options)
+  }
+
+  getPoliticianData(id: string): Observable<ServerResponse> {
+    return this.http.get<ServerResponse>(this.url + 'politician/' + id, this.options)
   }
 
 

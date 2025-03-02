@@ -92,6 +92,26 @@ let action = { // object with CRUD actions for export
             }
         })
     },
+    getPoliticianData: function (id, resolve, reject) { // takes username and category as parameters
+        fs.readFile('./db/politicians.json', 'utf8', function (err, data) { // reads the user's file for data
+            if (err) {
+                reject(err); // promise rejected, error returned
+            } else {
+                let match = JSON.parse(data.toString('utf8'))
+                // console.log("match1:", match)
+                match = match.find(p => p.politicianID.toString() === id.toString())
+                // console.log("match2:", match)
+                // parses data from JSON format and returns only category field given
+                if (match) {
+                    console.log("match:", match)
+                    resolve(match);
+                } else {
+                    reject("No User Data Found")
+                }
+                 // promise resolved, the matching category is returned
+            }
+        })
+    },
     // get: function (username, category, resolve, reject) { // takes username and category as parameters
     //     fs.readFile(path(username), function (err, data) { // reads the user's file for data
     //         if (err) {

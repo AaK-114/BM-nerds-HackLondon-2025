@@ -12,7 +12,7 @@ export interface ServerResponse {
   statusText: string;
   status: number;
   message: string;
-  data: userDataExport;
+  data: userDataExport | PoliticianPublicData;
 }
 
 export interface userDataExport {
@@ -30,6 +30,7 @@ export interface PoliticianPublicData {
   profile: {
     name: string;
     photo: string;
+    bio?: string;
     party: string;
     constituency: string;
     roleTitle: string;

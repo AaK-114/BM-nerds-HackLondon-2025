@@ -71,7 +71,7 @@ router.post("/auth/:username/:password", function (req, res) { // POST HTTP requ
   });
 });
 
-router.get("/:username", function (req, res) { // GET HTTP request with parameters
+router.get("/user/:username", function (req, res) { // GET HTTP request with parameters
   console.log(`GET request from user:  ${req.params.username}`)
   action.getUserData(req.params.username,function (data) { // get action called from action.js
     if (data) {
@@ -86,6 +86,33 @@ router.get("/:username", function (req, res) { // GET HTTP request with paramete
         "status": 404,
         "statusText": "NOT FOUND",
         "message": `Data could not be found for: ${req.params.username}`
+      });
+    }
+  }, function (err) {
+    console.error(err);
+    res.status(404).json({ // response if user not found
+      "status": 404,
+      "statusText": "NOT FOUND",
+      "message": `The user: ${req.params.username} could not be found.`
+    });
+  });
+});
+
+router.get("/politician/:id", function (req, res) { // GET HTTP request with parameters
+  console.log(`GET request for politician:  ${req.params.id}`)
+  action.getPoliticianData(req.params.id,function (data) { // get action called from action.js
+    if (data) {
+      res.status(200).json({ // response if any data found
+        "status": 200,
+        "statusText": "OK",
+        "message": `Data retrieved for: ${req.params.id}`,
+        "data": data // data is returned in response
+      });
+    } else {
+      res.status(404).json({ // response if not data found
+        "status": 404,
+        "statusText": "NOT FOUND",
+        "message": `Data could not be found for: ${req.params.id}`
       });
     }
   }, function (err) {

@@ -1,68 +1,66 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Latest
+      Latest Updates
     </ion-title>
+
+  <ion-grid>
+    <ion-row class="card-row">
+      <!-- Left: Image -->
+      <ion-col size="8">
+        <img alt="Silhouette of mountains" src="{{profile.photo}}" />
+      </ion-col>
+
+      <!-- Right: Radio Buttons (Aligned Right) -->
+      <ion-col size="4" class="radio-group-container">
+        <ion-radio-group value="Follow">
+          <ion-radio value="Support">Support</ion-radio><br />
+          <ion-radio value="Follow">Follow</ion-radio><br />
+          <ion-radio value="Dislike">Dislike</ion-radio><br />
+        </ion-radio-group>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title> {{ profile.name }} </ion-card-title>
+        <ion-card-subtitle>Affiliation and party: {{ profile.party }}</ion-card-subtitle>
+        <ion-card-subtitle>Constituency: {{ profile.constituency }}</ion-card-subtitle>
+        <ion-card-subtitle>Role: {{ profile.roleTitle }}</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+
+  <!--    <ion-card-content>-->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Biography</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{profile.bio}}
+        This is a demo bio
+      </ion-card-content>
+    </ion-card>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Latest</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <ion-card>
-    <ion-grid>
-      <ion-row class="card-row">
-        <!-- Left: Image -->
-        <ion-col size="10">
-          <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-        </ion-col>
-  
-        <!-- Right: Radio Buttons (Aligned Right) -->
-        <ion-col size="2" class="radio-group-container">
-          <ion-radio-group value="Follow">
-            <ion-radio value="Support">Support</ion-radio><br />
-            <ion-radio value="Follow">Follow</ion-radio><br />
-            <ion-radio value="Dislike">Dislike</ion-radio><br />
-          </ion-radio-group>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-    
-    <ion-card-header>
-      <ion-card-title>Politician Name</ion-card-title>
-      <ion-card-subtitle>Affiliation and party</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Biography and short summary
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card>
+  <ion-card *ngFor="let log of logs">
     <ion-grid>
       <ion-col></ion-col>
     </ion-grid>
-    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+    <img alt="Silhouette of mountains" src="{{log.logImages[0].ImageData}}" />
     <ion-card-header>
-      <ion-card-title>Event name</ion-card-title>
+      <ion-card-title>{{log.logDate}}</ion-card-title>
+      <ion-card-subtitle>
+        Hashtags:{{ log.topicIDs}}
+      </ion-card-subtitle>
     </ion-card-header>
-  
+
     <ion-card-content>
-    Event description
+    {{ log.logText }}
     </ion-card-content>
   </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Event title</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Event description
-    </ion-card-content>
-  </ion-card>
+
 
 </ion-content>

@@ -7,7 +7,12 @@ export const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
+        path: 'tab1', // latest
+        loadComponent: () =>
+          import('../tab1/tab1.page').then((m) => m.Tab1Page),
+      },
+      {
+        path: 'tab1/:id', // latest
         loadComponent: () =>
           import('../tab1/tab1.page').then((m) => m.Tab1Page),
       },
@@ -17,25 +22,25 @@ export const routes: Routes = [
           import('../tab2/tab2.page').then((m) => m.Tab2Page),
       },
       {
-        path: 'tab3',
+        path: 'tab3', // Topics
         loadComponent: () =>
           import('../tab3/tab3.page').then((m) => m.Tab3Page),
       },
       {
-        path: 'profile',
+        path: 'profile', // profile
         loadComponent: () =>
           import('../profile/profile.page').then((m) => m.ProfilePage),
       },
       {
         path: '',
-        redirectTo: '/tabs/tab3',
+        redirectTo: '/tabs/profile',
         pathMatch: 'full',
       },
     ],
   },
   {
     path: '',
-    redirectTo: '/tabs/tab3',
+    redirectTo: '/tabs/profile',
     pathMatch: 'full',
   },
 ];

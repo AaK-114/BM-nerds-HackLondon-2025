@@ -17,12 +17,12 @@
 
   <ion-searchbar [(ngModel)]="searchQuery" (ionInput)="filterPoliticians($event)"></ion-searchbar>
 
-  <ion-segment>
+  <ion-segment value="following">
     <ion-segment-button value="location" content-id="location">
-      <ion-label>Location</ion-label>
+      <ion-label>Locality</ion-label>
     </ion-segment-button>
-    <ion-segment-button value="favour" content-id="favour">
-      <ion-label>Favour</ion-label>
+    <ion-segment-button value="following" content-id="following">
+      <ion-label>Following</ion-label>
     </ion-segment-button>
   </ion-segment>
   <ion-segment-view>
@@ -37,7 +37,7 @@
       <ion-grid>
         <ion-row>
           <ion-col size="6" size-md="4" size-lg="3" *ngFor="let Politician of filteredCabinetPoliticians">
-            <ion-card>
+            <ion-card >
               <img alt="{{ Politician.name }}" [src]="Politician.image" />
               <ion-card-header>
                 <ion-card-title>{{ Politician.name }}</ion-card-title>
@@ -92,7 +92,7 @@
 
 
     <!--Favouribility sort-->
-    <ion-segment-content id="favour">
+    <ion-segment-content id="following">
       <ion-item>
         <ion-label>Supported</ion-label>
       </ion-item>
