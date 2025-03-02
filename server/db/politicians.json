@@ -173,8 +173,7 @@
         "logImages": [
           {
             "ImageID": "i1",
-            "ImageData": "https://static.attn.com/sites/default/files/13051592_10154259396340649_3676967092413162223_n.jpg?auto=format&crop=faces&fit=crop&q=60&w=736&ixlib=js-1.1.0
-"
+            "ImageData": "https://static.attn.com/sites/default/files/13051592_10154259396340649_3676967092413162223_n.jpg?auto=format&crop=faces&fit=crop&q=60&w=736&ixlib=js-1.1.0"
           }
         ],
         "topicIDs": [1, 14, 20]
@@ -217,8 +216,7 @@
         "logImages": [
           {
             "ImageID": "i1",
-            "ImageData": "https://www.aucklandchinese.nz/wp-content/uploads/2022/04/20211215_200939-2048x1536.jpg
-"
+            "ImageData": "https://www.aucklandchinese.nz/wp-content/uploads/2022/04/20211215_200939-2048x1536.jpg"
           }
         ],
         "topicIDs": [2, 8, 16]
@@ -382,7 +380,7 @@
         "logImages": [
           {
             "ImageID": "i1",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=London+Housing"
+            "ImageData": "https://d224eigjcmsomk.cloudfront.net/Pictures/2000x2000fit/4/0/2/1879402_londonhousingshutterstock_149077361_933540.jpg"
           }
         ],
         "topicIDs": [6, 11, 20, 25]
@@ -408,7 +406,7 @@
         "logImages": [
           {
             "ImageID": "i1",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Community+Center"
+            "ImageData": "https://www.powertochange.org.uk/wp-content/uploads/2017/06/DSF5251-1200x675-c-default.jpg"
           }
         ],
         "topicIDs": [2, 13]
@@ -421,7 +419,7 @@
         "logImages": [
           {
             "ImageID": "i2",
-            "ImageData": "https://dummyimage.com/400x300/000/fff&text=Education"
+            "ImageData": "https://cdn8.dissolve.com/p/D430_35_336/D430_35_336_1200.jpg"
           }
         ],
         "topicIDs": [7, 16, 21]
