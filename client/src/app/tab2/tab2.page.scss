@@ -1,25 +1,170 @@
-ion-card
-{
-    padding: 30px;
-    
+//ion-card
+//{
+//    padding: 30px;
+//
+//}
+//
+//ion-col
+//{
+//    text-align: center;
+//    width: 160px;
+//    justify-content: flex-start;
+//}
+//
+//.profile-row
+//{
+//    justify-content: flex-start;
+//}
+//
+//.profile-card
+//{
+//    width:160px;
+//    max-width: 100%;
+//    margin: auto;
+//    text-align: center;
+//}
+
+// General Styling for the Page
+ion-content {
+  --background: #f8f7fc; // A soft lavender background
+  padding: 16px;
+
+  ion-header[collapse="condense"] ion-title {
+    font-size: 1.5rem; // Slightly smaller font for the condensed header
+  }
 }
 
-ion-col
-{
-    text-align: center;
-    width: 160px;
-    justify-content: flex-start;
+// Header Styling
+ion-header {
+  ion-toolbar {
+    --background: #6e54a3; // A gentle purple for the toolbar
+    --color: #ffffff; // White text for contrast
+
+    ion-title {
+      font-size: 2rem; // Larger title for better visibility
+      font-weight: bold;
+      text-align: center;
+    }
+  }
 }
 
-.profile-row
-{
-    justify-content: flex-start;
+// Search Bar Styling
+ion-searchbar {
+  margin: 20px auto;
+  width: 90%;
+  --background: #ffffff; // White background for search bar
+  color: #6e54a3; // Purple text for search bar
+  border-radius: 8px;
+  --placeholder-color: #aaa; // Subtle placeholder text
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow
 }
 
-.profile-card
-{
-    width:160px;
-    max-width: 100%;
-    margin: auto;
-    text-align: center;
+// Segment Styling
+ion-segment {
+  margin: 20px auto;
+  width: 90%;
+  border-radius: 8px;
+  background: #f8f7fc; // Matches the content background
+  --indicator-color: #6e54a3; // Purple indicator
+
+  ion-segment-button {
+    --color: #6e54a3; // Text color for inactive tabs
+    --color-checked: #ffffff; // Text color for active tab
+    --background: #ffffff; // Default button background
+    --background-checked: #6e54a3; // Purple background for active tab
+    font-weight: bold;
+
+    ion-label {
+      font-size: 1rem;
+    }
+  }
+}
+
+// Category Labels (ion-item with ion-label)
+ion-item {
+  margin: 20px 0;
+  border-radius: 10px;
+  --background: #e8dff5; // Light purple background for category labels
+  --color: #6e54a3; // Text color
+  font-weight: bold;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow
+  padding: 10px;
+}
+
+// Grid and Image Styling
+ion-grid {
+  margin-top: 20px;
+
+  ion-row {
+    justify-content: space-evenly;
+
+    ion-col {
+      margin-bottom: 20px;
+      flex: 0 0 calc(50% - 10px); // 2 columns on smaller screens
+      @media screen and (min-width: 768px) {
+        flex: 0 0 calc(33.33% - 10px); // 3 columns on medium screens
+      }
+      @media screen and (min-width: 1024px) {
+        flex: 0 0 calc(25% - 10px); // 4 columns on large screens
+      }
+
+      ion-card {
+        border-radius: 12px; // Rounded corners for cards
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Clean shadow for depth
+        overflow: hidden;
+        --background: #ffffff; // White card background
+
+        img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          border-bottom: 1px solid #ddd; // Line separator
+        }
+
+        ion-card-header {
+          padding: 10px;
+          background: #6e54a3; // Purple header
+          color: #ffffff; // White text for card titles
+
+          ion-card-title {
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            color: #ffffff; // Ensure high readability
+          }
+
+          ion-card-subtitle {
+            font-size: 0.9rem;
+            text-align: center;
+            color: #e1cdea; // Light purple for subtitles
+          }
+        }
+      }
+    }
+  }
+}
+
+// Accessibility Improvements
+ion-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05); // Slight zoom on hover
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); // Stronger shadow on hover
+  }
+}
+
+// Responsive Font Scaling
+@media screen and (max-width: 576px) {
+  ion-title {
+    font-size: 1.6rem;
+  }
+
+  ion-card-header ion-card-title {
+    font-size: 0.9rem;
+  }
+
+  ion-card-header ion-card-subtitle {
+    font-size: 0.8rem;
+  }
 }

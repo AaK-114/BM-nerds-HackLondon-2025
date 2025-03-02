@@ -1,0 +1,118 @@
+// Header Styling
+ion-header {
+  --background: #4CAF50; // Bright green background for the header
+  --color: #fff; // White text
+  ion-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ion-title {
+      font-size: 2rem; // Make the title larger
+      font-weight: bold;
+      text-align: center;
+    }
+
+    ion-icon {
+      font-size: 1.8rem; // Larger icon size for better visibility
+      cursor: pointer;
+      color: #fff; // Match the text color
+      transition: transform 0.2s ease;
+    }
+
+    ion-icon:hover {
+      transform: scale(1.2); // Slight zoom effect on hover
+    }
+  }
+}
+
+// Content Styling
+ion-content {
+  --background: #f5f5f5; // Light grey background for better contrast
+  padding: 20px;
+  text-align: center;
+
+  div {
+    font-size: 1.4rem; // Bigger font for status messages
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+
+    &.status-logged-in {
+      background-color: #e8f8e8; // Light green background
+      color: #ff0000; // Bright green text
+      border: 1px solid #ff0000; // Match border to text color
+    }
+
+    &.status-logged-out {
+      background-color: #ffe9e9; // Light red background
+      color: #2f9100; // Bright red text
+      border: 1px solid #4bff22; // Match border to text color
+    }
+  }
+}
+
+// Buttons Styling
+.login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 90%; // Wider buttons for better visibility
+  max-width: 300px;
+  height: 60px; // Larger height for easier clickability
+  --background: #4CAF50; // Default: Green
+  --color: #000000; // White text
+  --ripple-color: #0034ff; // Subtle ripple effect
+  font-size: 1.5rem; // Larger font for labels
+  font-weight: 700; // Bolder labels
+  border-radius: 10px; // Rounded corner buttons
+  transition: transform 0.2s ease-in-out;
+
+  ion-icon {
+    font-size: 1.8rem; // Larger icon
+    margin-right: 10px; // Add spacing between icon and text
+  }
+
+  ion-text {
+    font-weight: bold;
+  }
+
+  &:hover {
+    transform: scale(1.05); // Slight zoom effect while hovering
+    //filter: brightness(90%);
+  }
+
+  &::part(native) {
+    all: unset; // Clean reset for Ionic styling conflicts
+  }
+
+  &[color='danger'] {
+    --background: #ff0000; // Bright red for logout button
+    --color: #000000; // White text for contrast
+  }
+}
+
+// Accessibility Improvements
+ion-icon {
+  cursor: pointer;
+}
+
+// Responsiveness
+@media screen and (max-width: 576px) {
+  ion-title {
+    font-size: 1.5rem; // Slightly smaller title on smaller screens
+  }
+
+  .login-btn {
+    width: 100%; // Full width for mobile devices
+    margin: 15px 0;
+  }
+
+  div {
+    font-size: 1.2rem; // Adjust text size for smaller screens
+    padding: 15px;
+  }
+}

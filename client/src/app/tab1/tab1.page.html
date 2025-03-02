@@ -6,30 +6,64 @@
 
   <ion-grid>
     <ion-row class="card-row">
-      <!-- Left: Image -->
-      <ion-col size="8">
-        <img alt="Silhouette of mountains" src="{{profile.photo}}" />
+      <!-- Left: Profile Image -->
+      <ion-col size="6" class="profile-column">
+        <div class="profile-image-container">
+          <img alt="{{ profile.name }}" src="{{profile.photo}}" />
+        </div>
       </ion-col>
 
-      <!-- Right: Radio Buttons (Aligned Right) -->
-      <ion-col size="4" class="radio-group-container">
-        <ion-radio-group value="Follow">
-          <ion-radio value="Support">Support</ion-radio><br />
-          <ion-radio value="Follow">Follow</ion-radio><br />
-          <ion-radio value="Dislike">Dislike</ion-radio><br />
-        </ion-radio-group>
+      <!-- Right: Intro Details Card -->
+      <ion-col size="6" class="details-column">
+        <ion-card class="details-card">
+          <ion-card-header>
+            <ion-card-title> {{ profile.name }} </ion-card-title>
+            <ion-card-subtitle>Affiliation and party: {{ profile.party }}</ion-card-subtitle>
+            <ion-card-subtitle>Constituency: {{ profile.constituency }}</ion-card-subtitle>
+            <ion-card-subtitle>Role: {{ profile.roleTitle }}</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
       </ion-col>
     </ion-row>
+
+
+    <ion-row class="checkbox-container">
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Choose your action</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-radio-group value="Follow" class="radio-group">
+              <ion-row>
+                <ion-col size="4">
+                  <ion-item class="radio-item">
+                    <ion-label>Support</ion-label>
+                    <ion-radio slot="start" value="Support"></ion-radio>
+                  </ion-item>
+                </ion-col>
+                <ion-col size="4">
+                  <ion-item class="radio-item">
+                    <ion-label>Follow</ion-label>
+                    <ion-radio slot="start" value="Follow"></ion-radio>
+                  </ion-item>
+                </ion-col>
+                <ion-col size="4">
+                  <ion-item class="radio-item">
+                    <ion-label>Dislike</ion-label>
+                    <ion-radio slot="start" value="Dislike"></ion-radio>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+            </ion-radio-group>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
   </ion-grid>
 
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title> {{ profile.name }} </ion-card-title>
-        <ion-card-subtitle>Affiliation and party: {{ profile.party }}</ion-card-subtitle>
-        <ion-card-subtitle>Constituency: {{ profile.constituency }}</ion-card-subtitle>
-        <ion-card-subtitle>Role: {{ profile.roleTitle }}</ion-card-subtitle>
-      </ion-card-header>
-    </ion-card>
+
 
   <!--    <ion-card-content>-->
     <ion-card>

@@ -142,7 +142,7 @@
 
       <ion-grid>
         <ion-row>
-          <ion-col size="6" size-md="4" size-lg="3" *ngFor="let p of yayPoliticians">
+          <ion-col size="6" size-md="4" size-lg="3" *ngFor="let p of nayPoliticians">
             <ion-card (click)="openBio(p.politicianID)">
               <img alt="{{ p.profile.name }}" [src]="p.profile.photo" />
               <ion-card-header>

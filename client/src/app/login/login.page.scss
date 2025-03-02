@@ -1,0 +1,98 @@
+// General styling for the header
+ion-header {
+  --background: #4CAF50; // A pleasant green background
+  --color: #fff; // White text for contrast
+  ion-toolbar {
+    display: flex;
+    justify-content: space-between; // Align elements to sides
+    ion-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    ion-icon {
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+}
+
+// Segment styling
+ion-segment {
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 8px;
+  color: #0d0d0d;
+
+  ion-segment-button {
+    --color: #000000; // Active button text
+    --color-checked: #000000; // Checked button text color
+    --background: #fff;
+    --background-checked: #4CAF50; // Checked background
+    font-weight: 600;
+
+    ion-label {
+      font-size: 1rem;
+      color: #0d0d0d;
+    }
+  }
+}
+
+// Form Items (username, password fields)
+ion-item {
+  --background: #f8f8f8;
+  border-radius: 10px;
+  margin: 15px 20px;
+
+  ion-label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+  }
+
+  ion-input {
+    padding: 10px;
+    border: none;
+    --placeholder-color: #888;
+    font-size: 1rem;
+  }
+}
+
+// Status Label
+ion-label {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+// Login/Create Account Button
+.login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 80%;
+  --background: #4CAF50; // Green button
+  --color: #000000; // White text
+  --ripple-color: #e6e6e6; // Light ripple
+
+  border-radius: 8px;
+  font-size: 1.1rem;
+
+  ion-icon {
+    margin-right: 6px;
+    font-size: 1.2rem;
+  }
+
+  ion-text {
+    font-weight: 600;
+  }
+}
+
+// Content styling
+ion-content {
+  --background: #f1f1f1; // Use a soft grey background
+  padding-bottom: 20px;
+}

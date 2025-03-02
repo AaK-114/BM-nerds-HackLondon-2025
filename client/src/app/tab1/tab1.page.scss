@@ -1,4 +1,169 @@
-ion-card
-{
-    padding-right: 50px;
+//ion-card
+//{
+//    padding-right: 50px;
+//}
+//
+//ion-title {
+//  padding: 20px;
+//}
+//
+//img {
+//  width: auto;
+//  height: 100%;
+//}
+//
+//
+//ion-header {
+//  height: 40%;
+//}
+
+// General Styling for the Page
+ion-content {
+  --background: #f8f7fc; // Soft lavender background
+  padding: 16px;
+
+  ion-header[collapse="condense"] ion-title {
+    font-size: 1.5rem; // Slightly smaller font for the condensed header
+  }
+}
+
+// Header Styling
+ion-header {
+  ion-toolbar {
+    --background: #6e54a3; // Purple toolbar
+    --color: #ffffff;
+
+    ion-title {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}
+
+// Bio Section Styling (Neutral Background)
+
+
+// Biography Section
+ion-card:nth-child(2) {
+  border-radius: 12px;
+  background: #ffffff; // Neutral white
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow
+  margin-top: 10px;
+
+  ion-card-header {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+    background: #f9f9f9; // Light grey background for header
+    color: #333;
+
+    ion-card-title {
+      font-size: 1.2rem;
+      color: #6e54a3; // Purple title for emphasis
+      font-weight: bold;
+    }
+  }
+
+  ion-card-content {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555; // Neutral darker grey for text
+    padding: 5px;
+  }
+}
+
+.profile-image-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px; // Adds rounded corners
+  overflow: hidden; // Ensures the image stays within the rounded corners
+  background-color: #f8f8f8; // Light grey as a placeholder background
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; // Ensures the image fills the container while maintaining aspect ratio
+  }
+}
+
+
+// Logs Styling
+ion-card {
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Highlight shadow
+  margin-bottom: 20px;
+  --background: #ffffff;
+
+  img {
+    width: 100%;
+    height: 200px; // Consistent image height
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    border-radius: 12px 12px 0 0; // Rounded top corners
+  }
+
+  ion-card-header {
+    padding: 10px;
+    background: #f8f8f8; // Light grey for card headers
+    border-bottom: 1px solid #ddd; // Separator line
+    color: #333; // Neutral text color
+
+    ion-card-title {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    ion-card-subtitle {
+      font-size: 0.9rem;
+      color: #888; // Subtle grey for captions
+    }
+  }
+
+  ion-card-content {
+    padding: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555; // Neutral grey for text
+  }
+
+  &:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); // Enhanced shadow on hover
+    transform: scale(1.02); // Subtle zoom
+  }
+}
+
+// Accessibility Improvements
+ion-radio-group ~ ion-card,
+ion-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: scale(1.02); // Slight zoom effect on hover
+  }
+}
+
+// Responsive Adjustments
+@media screen and (max-width: 576px) {
+  .card-row {
+    flex-direction: column;
+
+    ion-col {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    img {
+      margin: 0 auto; // Center the image
+    }
+  }
+
+  ion-card-header ion-card-title {
+    font-size: 0.9rem;
+  }
+
+  ion-card-header ion-card-subtitle {
+    font-size: 0.8rem;
+  }
 }

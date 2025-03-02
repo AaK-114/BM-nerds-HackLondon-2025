@@ -7,7 +7,8 @@
       "party": "Conservative",
       "constituency": "Uxbridge and South Ruislip",
       "roleTitle": "Prime Minister",
-      "preferences": {}
+      "preferences": {},
+      "bio": "I am Boris Johnson, serving as the Prime Minister and representing Uxbridge and South Ruislip with energetic, decisive leadership. I strive every day to drive economic growth, bolster community spirit, and shape a prosperous future for the United Kingdom."
     },
     "logs": [
       {
@@ -63,7 +64,8 @@
       "party": "La République En Marche",
       "constituency": "Paris",
       "roleTitle": "President",
-      "preferences": {}
+      "preferences": {},
+      "bio": "I am Emmanuel Macron, President of France and a proud advocate for a united, forward-thinking Europe from the heart of Paris. My focus is on innovation, reform, and working together to build a resilient and dynamic society."
     },
     "logs": [
       {
@@ -106,7 +108,8 @@
       "party": "Bharatiya Janata Party",
       "constituency": "Gujarat",
       "roleTitle": "Prime Minister",
-      "preferences": {}
+      "preferences": {},
+      "bio": "I am Narendra Modi, the Prime Minister of India, hailing from Gujarat and dedicated to transforming our nation with a blend of tradition and modernity. I work tirelessly to uplift every citizen by embracing sustainable development and progressive governance."
     },
     "logs": [
       {
@@ -162,7 +165,8 @@
       "party": "Liberal",
       "constituency": "Papineau, Quebec",
       "roleTitle": "Prime Minister",
-      "preferences": {}
+      "preferences": {},
+      "bio": "I am Justin Trudeau, the Prime Minister of Canada, representing Papineau, Quebec with an unyielding commitment to diversity, reconciliation, and environmental stewardship. I believe in the power of dialogue and inclusivity to drive meaningful change for all Canadians."
     },
     "logs": [
       {
@@ -205,7 +209,8 @@
       "party": "Labour",
       "constituency": "Mount Albert, Auckland",
       "roleTitle": "Prime Minister",
-      "preferences": {}
+      "preferences": {},
+      "bio": "I am Jacinda Ardern, Prime Minister of New Zealand from Mount Albert, Auckland, devoted to building a compassionate and inclusive society. My leadership is rooted in empathy, innovation, and the determination to ensure a brighter future for every New Zealander."
     },
     "logs": [
       {
@@ -231,7 +236,8 @@
       "party": "CDU",
       "constituency": "Germany",
       "roleTitle": "Chancellor",
-      "preferences": {}
+      "preferences": {},
+      "bio": "I am Angela Merkel, Chancellor of Germany, committed to pragmatic leadership and steady progress in a rapidly changing world. I focus on ensuring stability, fostering European unity, and guiding Germany toward sustainable prosperity."
     },
     "logs": [
       {
@@ -270,7 +276,8 @@
       "party": "Labour",
       "constituency": "London",
       "roleTitle": "Mayor",
-      "preferences": {}
+      "preferences": {},
+      "bio": "I am Sadiq Khan, the Mayor of London, passionately representing a city renowned for its diversity and dynamism. I am dedicated to creating safe, inclusive neighborhoods and innovative urban policies that empower every Londoner."
     },
     "logs": [
       {
@@ -326,7 +333,8 @@
       "party": "Conservative",
       "constituency": "Tunbridge Wells",
       "roleTitle": "MP",
-      "preferences": {}
+      "preferences": {},
+      "bio": "I am Laura Trevelyan, an MP for Tunbridge Wells, steadfast in championing local interests with integrity and determination. I work hard to strengthen community ties and deliver meaningful change that improves everyday life for my constituents."
     },
     "logs": [
       {
@@ -369,7 +377,8 @@
       "party": "Labour",
       "constituency": "London",
       "roleTitle": "Councillor",
-      "preferences": {}
+      "preferences": {},
+      "bio": "I am Daniel Foster, a Councillor in London, devoted to enhancing urban living and addressing the challenges of affordable housing and development. I believe in creating a sustainable and inclusive community that reflects the vibrant spirit of our city."
     },
     "logs": [
       {
@@ -395,7 +404,8 @@
       "party": "Conservative",
       "constituency": "Tunbridge Wells",
       "roleTitle": "Councillor",
-      "preferences": {}
+      "preferences": {},
+      "bio": "I am Fiona Gallagher, serving as a Councillor in Tunbridge Wells, with a deep commitment to improving local public services and education. My goal is to foster strong community bonds and ensure that our area remains safe, vibrant, and forward-looking."
     },
     "logs": [
       {
