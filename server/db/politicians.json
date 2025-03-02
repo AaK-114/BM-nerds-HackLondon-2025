@@ -201,7 +201,7 @@
     "politicianID": 5,
     "profile": {
       "name": "Jacinda Ardern",
-      "photo": "https://upload.wikimedia.org/wikipedia/commons/3/33/Jacinda_Ardern.jpg",
+      "photo": "https://imgs.search.brave.com/IYHNLSJfa-NNWkpU33UnqCDhQCHrhspzVkx9jrdnFgg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTIx/MDYxNzkyMS9waG90/by93ZWxsaW5ndG9u/LW5ldy16ZWFsYW5k/LXByaW1lLW1pbmlz/dGVyLWphY2luZGEt/YXJkZXJuLXNwZWFr/cy1kdXJpbmctaGVy/LWNvdmlkLTE5LXVw/ZGF0ZS1tZWRpYS5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/Wl9SOVNNS01YUGRF/TnhhdW5ab21SbWVE/M2QyYjhTRHJKUEtM/UVVQSUE3ND0",
       "party": "Labour",
       "constituency": "Mount Albert, Auckland",
       "roleTitle": "Prime Minister",
@@ -227,7 +227,7 @@
     "politicianID": 6,
     "profile": {
       "name": "Angela Merkel",
-      "photo": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Angela_Merkel_2019.jpg",
+      "photo": "https://imgs.search.brave.com/nhr0fM1OqEmI78V5jzOy2tuD5hQw414l_klEtkG4jQk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTEybDRQZXp1bkwu/anBn",
       "party": "CDU",
       "constituency": "Germany",
       "roleTitle": "Chancellor",
@@ -266,7 +266,7 @@
     "politicianID": 7,
     "profile": {
       "name": "Sadiq Khan",
-      "photo": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Sadiq_Khan_%28cropped%29.jpg",
+      "photo": "https://imgs.search.brave.com/lRGzIimbg0vhRHCe3hsyoADN3tbAXWoQtEnu_6ju2XQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuaW5kZXBlbmRl/bnQuY28udWsvMjAy/NC8xMC8wMi8xNS8y/MTc0NDgyMzQ2Lmpw/Zz9xdWFsaXR5PTc1/JndpZHRoPTY0MCZj/cm9wPTM6MixzbWFy/dCZhdXRvPXdlYnA",
       "party": "Labour",
       "constituency": "London",
       "roleTitle": "Mayor",
@@ -365,7 +365,7 @@
     "politicianID": 9,
     "profile": {
       "name": "Daniel Foster",
-      "photo": "https://dummyimage.com/200x200/000/fff&text=Daniel+Foster",
+      "photo": "https://imgs.search.brave.com/4PqvhC9QWFrDVp9u7XHpNNYmWWYjPojMGsDqr8x3_Ok/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/b2lzZS51dG9yb250/by5jYS9ob21lL3Np/dGVzL2RlZmF1bHQv/ZmlsZXMvMjAyMy0w/OC9wcm9maWxlLWRh/bmllbC1mb3N0ZXIu/anBn",
       "party": "Labour",
       "constituency": "London",
       "roleTitle": "Councillor",
@@ -391,7 +391,7 @@
     "politicianID": 10,
     "profile": {
       "name": "Fiona Gallagher",
-      "photo": "https://dummyimage.com/200x200/000/fff&text=Fiona+Gallagher",
+      "photo": "https://imgs.search.brave.com/PwfIZbZ8XQTsF3Q4n1bjuMh53IwDLIrNaraJAM0uILU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9mZWVk/cy5iYXJvZmlyZWxh/bmQuaWUvQmFycmlz/dGVyLVBob3Rvcy8x/MDQwMzItRmlvbmEt/R2FsbGFnaGVyLmpw/Zw",
       "party": "Conservative",
       "constituency": "Tunbridge Wells",
       "roleTitle": "Councillor",
