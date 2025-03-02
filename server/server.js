@@ -15,7 +15,7 @@ app.use(function (req, res, next) {
 
 // REJECT WITH 401 UNAUTHORIZED
 
-router.get("/authUser/:username/:password", function (req, res) { // GET HTTP request with 'authUser' route
+router.get("/auth/:username/:password", function (req, res) { // GET HTTP request with 'authUser' route
                                                                   // takes username and password as parameters
   console.log("GET request to authenticate user: " + req.params.username)
   action.authUser(req.params.username, req.params.password, function (verification) { // authUser action called from action.js
@@ -43,7 +43,7 @@ router.get("/authUser/:username/:password", function (req, res) { // GET HTTP re
   })
 })
 
-router.post("/createUser/:username/:password", function (req, res) { // POST HTTP request with 'createUser' route
+router.post("/auth/:username/:password", function (req, res) { // POST HTTP request with 'createUser' route
   console.log(`POST request to create new user: ${req.params.username}`)
   action.createUser(req.params.username, req.params.password, function (newUsername) { // createUser action called from action.js
     res.status(201).json({ // response if successful
